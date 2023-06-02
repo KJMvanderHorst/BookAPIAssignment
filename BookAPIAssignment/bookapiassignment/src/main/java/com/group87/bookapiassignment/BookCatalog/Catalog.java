@@ -15,10 +15,10 @@ public class Catalog {
         books.add(newBook);
     }
     
-    public Arraylist<Books> getCatalog(){
+    public ArrayList<Book> getCatalog(){
         return books;
     }
-    
+
     public Book readBookByID(String identifier){
         for(Book book:books){
             if(book.getId().equals(identifier)){
