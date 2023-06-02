@@ -6,8 +6,8 @@ public class OrderController {
 
     private ArrayList<Order> orders = new ArrayList<>();
 
-    public orderBook(Book book, int orderQuantity){
-        Order currentOrder = new Order(book,orderQuantity, String.valueOf(System.currentTimeMillis())))
+    public void orderBook(Book book, int orderQuantity){
+        Order currentOrder = new Order(book,orderQuantity, String.valueOf(System.currentTimeMillis()));
         orders.add(currentOrder);
         // when the order is placed also remove this quantity through the api
     }
