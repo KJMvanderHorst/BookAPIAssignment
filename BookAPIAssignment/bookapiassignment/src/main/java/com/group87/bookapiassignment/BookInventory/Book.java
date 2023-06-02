@@ -1,4 +1,4 @@
-package com.group87.bookapiassignment.BookCatalog;
+package com.group87.bookapiassignment.BookInventory;
 
 public class Book{
 
