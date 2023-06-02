@@ -9,10 +9,15 @@ public class Catalog {
 
     private ArrayList<Book> books;
 
+    public Catalog(){
+        books = new ArrayList<>();
+    }
+
     public void createBook(String identificationCode, String title, String author, String publicationYear){
         Book newBook = new Book(identificationCode, title, author, publicationYear);
         books.add(newBook);
     }
+
 
     public Book readBookByID(String identifier){
         for(Book book:books){
