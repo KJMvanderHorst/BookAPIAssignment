@@ -1,8 +1,5 @@
 package com.group87.bookapiassignment.BookCatalog;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.util.ArrayList;
 
 public class Catalog {
@@ -17,8 +14,11 @@ public class Catalog {
         Book newBook = new Book(identificationCode, title, author, publicationYear);
         books.add(newBook);
     }
-
-
+    
+    public Arraylist<Books> getCatalog(){
+        return books;
+    }
+    
     public Book readBookByID(String identifier){
         for(Book book:books){
             if(book.getId().equals(identifier)){
