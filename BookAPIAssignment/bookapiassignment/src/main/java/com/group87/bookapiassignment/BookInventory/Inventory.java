@@ -8,7 +8,11 @@ public class Inventory {
     HashMap<Book, Integer> inventoryList;
 
     public Inventory(){
-        inventoryList = new HashMap<>();
+        this.inventoryList = new HashMap<>();
+    }
+
+    public HashMap<Book, Integer> getInventory(){
+        return this.inventoryList;
     }
 
     public void addBook(Book book, int quantity){
@@ -19,5 +23,13 @@ public class Inventory {
         if(inventoryList.containsKey(book)){
             inventoryList.put(book, newQuantity);
         }
+    }
+
+    public int getQuantity(Book book){
+        return inventoryList.get(book);
+    }
+
+    public boolean isAvalaible(Book book){
+        return inventoryList.containsKey(book) ;
     }
 }
